@@ -1,0 +1,136 @@
+:root {
+  --background: #EDEDED;
+  --light-green: #EDF5F0;
+  --green: #40B586;
+  --dark-grey: #777E7B;
+  --grey: #56615D;
+  --dark-grey: #3D3D3D;
+  --spacing: 8px;
+}
+
+* {
+	box-sizing: border-box;
+	font-family: "Poppins";
+}
+
+html {
+	// background-color: var(--background);
+	font-size: 16px;
+	line-height: 16px;
+}
+
+.verify-email {
+	max-width: 420px;
+	margin: auto;
+	height: 98vh;
+	padding: var(--spacing) calc((var(--spacing)) * 2);
+	display: flex;
+	flex-direction: column;
+}
+
+.status {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	&-item {
+		height: 16px;
+		background-color: var(--light-green);
+		border-radius: 25px;
+	}
+
+	&__left {
+		width: 33px;
+	}
+
+	&__right {
+		display: flex;
+		justify-content: space-between;
+		width: 20%;
+	}
+
+	&__circle {
+		width: 16px;
+	}
+
+	&__oval {
+		width: 24px;
+	}
+}
+
+.header {
+
+	margin-top: calc((var(--spacing)) * 2.5);
+	
+	&__heading {
+		font-style: normal;
+		font-weight: 600;
+		font-size: 1.5rem;
+		line-height: 2rem;
+		margin-bottom: calc((var(--spacing)) * 0.675);
+	}
+
+	&__para {
+		font-family: 'Poppins';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 0.75rem;
+		line-height: 1rem;
+		color: var(--grey);
+		margin-top: 0;
+	}
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 75%;
+
+	&__para {
+		font-weight: 400;
+		font-size: 0.75rem;
+		line-height: 1rem;
+		color: var(--grey);
+		margin-bottom: 0;
+
+		&--black {
+			color: var(--dark-grey);
+			font-weight: 500;
+			margin-left: calc((var(--spacing)) * 0.375);
+		}
+
+		a {
+			text-decoration: none;
+			font-weight: 500;
+			color: var(--green);
+		}
+	}
+	
+}
+
+.logo-wrapper {
+	width: 120px;
+	height: 120px;
+	background-color: #F4F6F5;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	margin-bottom: calc((var(--spacing)) / 2);
+}
+
+.btn {
+	font-style: normal;
+	font-weight: 500;
+	font-size: 0.875rem;
+	line-height: 1.25rem;
+	border-radius: 48px;
+	color: #777E7B;
+	padding: calc((var(--spacing)) * 2);
+	text-align: center;
+}
+
+.btn--grey {
+	background-color: rgba(0, 0, 0, 0.03);
+}
