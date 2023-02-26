@@ -101,8 +101,32 @@ const SearchDefault = () => {
 		},
 	];
 
+	const trendingProducts = [
+		{
+			brand: "Patek Philippe",
+			name: "Nautilus...",
+			img: "productImg1"
+		},
+		{
+			brand: "Patek Philippe",
+			name: "Nautilus...",
+			img: "productImg1"
+		},
+		{
+			brand: "Patek Philippe",
+			name: "Nautilus...",
+			img: "productImg1"
+		},
+		{
+			brand: "Patek Philippe",
+			name: "Nautilus...",
+			img: "productImg1"
+		},
+	]
+
+
 	return (
-		<div className="container search-default">
+		<div className="page-wrapper search-default">
 			<StatusBar />
 
 			<section className="search">
@@ -155,12 +179,14 @@ const SearchDefault = () => {
 
 			<section className="trending-products">
 				<h3 className="section__heading">Trending Products on Barosa</h3>
-				<div className="products__wrapper">
-					<div className="product">
-						<img className="product__img" src={productImg1} />
-						<p className="product__brand">Patek Phillippe</p>
-						<p className="product__name">Nautilus...</p>
-					</div>
+					<div className="products__wrapper">
+					{trendingProducts.map((product) => (
+						<div className="product">
+							<img className="product__img" src={productImg1} />
+							<p className="product__brand">Patek Phillippe</p>
+							<p className="product__name">Nautilus...</p>
+						</div>
+					))}
 				</div>
 			</section>
 			</div>

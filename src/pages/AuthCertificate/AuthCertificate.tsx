@@ -7,7 +7,7 @@ import productImg from "../../assets/products/watch.svg";
 const AuthCertificate = () => {
 
 	return (
-		<div className="container auth-certificate">
+		<div className="page-wrapper auth-certificate">
 			<StatusBar/>
 			<section className="header">
 				<img className="back-icon" src={backIcon}/>

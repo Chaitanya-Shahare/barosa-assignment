@@ -4,7 +4,7 @@ import StatusBar from "../../components/StatusBar";
 
 const VerifyEmail = () => {
 	return (
-		<div className="verify-email">
+		<div className="verify-email page-wrapper">
 			<StatusBar />
 
 			<header className="header">

@@ -29,7 +29,7 @@ html {
 	margin: auto;
 }
 
-.verify-email, .container {
+.page-wrapper {
 	min-height: 98vh;
 	padding: var(--spacing) calc((var(--spacing)) * 1);
 	display: flex;
@@ -148,7 +148,7 @@ html {
 		justify-content: space-between;
 		align-items: center;
 		border-bottom: 1px solid #E2E9E6;
-		padding-bottom: 8px;
+		padding-bottom: calc(var(--spacing));
 	}
 
 	.searchbar-wrapper {
@@ -159,7 +159,7 @@ html {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		padding: 0 8px;
+		padding: 0 calc(var(--spacing));
 
 		input {
 			background-color: transparent;
@@ -174,14 +174,13 @@ html {
 	.section__heading {
 		font-family: 'Poppins';
 		font-style: normal;
-		font-size: 10px;
-		line-height: 12px;
+		font-size: 0.625rem;
+		line-height: 0.75rem;
 		text-transform: uppercase;
 		color: #909995;
 	}
 
 	.brands-wrapper {
-		height: 72;
 		display: flex;
 		overflow-x: auto;
 
@@ -196,7 +195,7 @@ html {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		margin-right: 12px;
+		margin-right: calc(var(--spacing) * 1.5);
 
 		&__logo {
 			height: 48px;
@@ -208,7 +207,7 @@ html {
 
 		&__name {
 			font-weight: 500;
-			font-size: 12px;
+			font-size: 0.75rem;
 			color: #565C5A;
 			margin: 0 0;
 			margin-top: 4px;
@@ -216,15 +215,11 @@ html {
 		}
 	}
 
-	.dealers-wrapper {
-
-	}
-
 	.dealer {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		margin-bottom: 16px;
+		margin-bottom: calc(var(--spacing) * 2);
 
 		&__info {
 			width: 80%;
@@ -232,16 +227,16 @@ html {
 
 		&__name {
 			font-weight: 600;
-			font-size: 14px;
-			line-height: 20px;
+			font-size: 0.875rem;
+			line-height: 1.25rem;
 			color: #3A3D3C;
 			margin: 0;
-			margin-bottom: 4px;
+			margin-bottom: calc(var(--spacing) / 2);
 		}
 
 		&__rating {
 			font-weight: 500;
-			font-size: 12px;
+			font-size: 0.75rem;
 			color: #737A77;
 			display: flex;
 			align-items: center;
@@ -250,27 +245,37 @@ html {
 
 	}
 
+	.products__wrapper {
+		display: flex;
+		overflow-x: auto;
+
+		&::-webkit-scrollbar {
+			width: 0;
+		}
+	}
+
 	.product {
 		background-color: #F4F5F5;
 		width: 168px;
 		height: 240px;
+		margin-right: calc(var(--spacing));
 		display: flex;
 		flex-direction: column;
 
 		p {
 			margin: 0;
-			margin: 2px 8px;
+			margin: calc(var(--spacing) / 4) calc(var(--spacing));
 		}
 
 		&__brand {
-			font-size: 12px;
+			font-size: 0.75rem;
 			color: #565C5A;
 		}
 
 		&__name {
 			font-weight: 600;
-			font-size: 14px;
-			line-height: 20px;
+			font-size: 0.875rem;
+			line-height: 1.25rem;
 			color: #565C5A;
 		}
 	}
@@ -286,8 +291,8 @@ html {
 		&__heading {
 			width: 80%;
 			font-weight: 600;
-			font-size: 14px;
-			line-height: 20px;
+			font-size: 0.875rem;
+			line-height: 1.25rem;
 			color: #1D1F1E;
 		}
 	}
