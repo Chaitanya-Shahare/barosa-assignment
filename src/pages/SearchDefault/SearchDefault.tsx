@@ -15,6 +15,7 @@ import watchsquareLogo from "../../assets/logos/dealers/WatchsquareLogo.svg";
 import productImg1 from "../../assets/products/Nautilus Chronograph.svg";
 import productImg2 from "../../assets/products/Heritage.svg";
 import productImg3 from "../../assets/products/Frame 135-2.svg";
+import SearchBar from "../../components/SearchBar/SearchBar";
 
 const SearchDefault = () => {
 	const topBrands = [
@@ -129,17 +130,7 @@ const SearchDefault = () => {
 		<div className="page-wrapper search-default">
 			<StatusBar />
 
-			<section className="search">
-			<img src={backIcon} className="back-icon" />
-			<div className="searchbar-wrapper">
-			<input
-				className="search__text"
-				type={"text"}
-				placeholder="Search for Brands, Products and..."
-			/>
-			<img className="search-icon" src={searchIcon} />
-			</div>
-			</section>
+			<SearchBar/>
 
 			<section className="top-brands">
 			<h3 className="section__heading">TOP BRANDS</h3>
