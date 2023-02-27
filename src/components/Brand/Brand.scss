@@ -1,0 +1,26 @@
+
+.brand {
+	height: 68px;
+	width: 72px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-right: calc(var(--spacing) * 1.5);
+
+	&__logo {
+		height: 48px;
+		width: 48px;
+		margin: 0 auto;
+		border-radius: 50%;
+		border: 1px solid #E2E9E6;
+	}
+
+	&__name {
+		font-weight: 500;
+		font-size: 0.75rem;
+		color: #565C5A;
+		margin: 0 0;
+		margin-top: 4px;
+		text-align: center;
+	}
+}

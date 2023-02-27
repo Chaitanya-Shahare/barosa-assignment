@@ -1,0 +1,33 @@
+
+.products {
+	.product {
+
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		width: 100%;
+		height: auto;
+		background: none;
+		padding-left: var(--spacing);
+		padding-right: var(--spacing);
+
+		&__img {
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
+		}
+
+		&__info {
+			width: 80%;
+			padding-left: var(--spacing);
+
+			p {
+				margin-left: 0;
+			}
+		}
+
+		.small-btn {
+			height: 40px;
+		}
+	}
+}

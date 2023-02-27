@@ -1,6 +1,9 @@
+import {useState} from "react";
 import "./SearchBar.scss"
 
 const SearchBar = () => {
+
+	const [searchWord, setSearchWord] = useState("");
 
 	return(
 
@@ -14,10 +17,17 @@ const SearchBar = () => {
 				className="search__text"
 				type={"text"}
 				placeholder="Search for Brands, Products and..."
+				value={searchWord}
+				onChange={(event) => {setSearchWord(event.target.value)}}
 			/>
 			{/*<img className="search-icon" src={searchIcon} />*/}
 			<button className="search-btn small-btn">
-				<i className="ri-search-line search-icon ri-xl"></i>
+				
+				{
+				searchWord === "" 
+					? <i className="ri-search-line search-icon ri-xl"></i>
+					: <i className="ri-close-line close-icon ri-xl"></i>
+				}
 			</button>
 			</div>
 			</section>

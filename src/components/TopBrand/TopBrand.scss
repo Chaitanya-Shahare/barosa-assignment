@@ -1,0 +1,41 @@
+
+.top-brand {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: var(--spacing);
+
+	&__logo {
+		width: 40px;
+		height: 40px;
+		border: 1px solid grey;
+		border-radius: 50%;
+		border: 1px solid #e2e9e6;
+	}
+
+	&__info {
+		width: 80%;
+		padding-left: var(--spacing);
+
+		* { padding: 0; margin: 0; }
+	}
+	&__name {
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 20px;
+		/* identical to box height, or 143% */
+
+		/* Color/Text/Light/90 */
+		color: #3a3d3c;
+	}
+
+	&__products-no {
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 16px;
+		/* identical to box height, or 133% */
+
+		/* Color/Text/Light/70 */
+		color: #737a77;
+	}
+}

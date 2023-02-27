@@ -1,6 +1,12 @@
 import React from "react";
 // Components
 import StatusBar from "../../components/StatusBar";
+import SearchBar from "../../components/SearchBar/SearchBar";
+import Brand from "../../components/Brand/Brand";
+import Dealer from "../../components/Dealer/Dealer";
+import Product from "../../components/Product/Product";
+// Styles
+import "./SearchDefault.scss"
 // Icons
 import backIcon from "../../assets/icons/back-icon.svg";
 import searchIcon from "../../assets/icons/search-icon.svg";
@@ -15,7 +21,6 @@ import watchsquareLogo from "../../assets/logos/dealers/WatchsquareLogo.svg";
 import productImg1 from "../../assets/products/Nautilus Chronograph.svg";
 import productImg2 from "../../assets/products/Heritage.svg";
 import productImg3 from "../../assets/products/Frame 135-2.svg";
-import SearchBar from "../../components/SearchBar/SearchBar";
 
 const SearchDefault = () => {
 	const topBrands = [
@@ -128,55 +133,36 @@ const SearchDefault = () => {
 
 	return (
 		<div className="page-wrapper search-default">
-			<StatusBar />
+			{/* <StatusBar /> */}
 
 			<SearchBar/>
 
 			<section className="top-brands">
-			<h3 className="section__heading">TOP BRANDS</h3>
-			<div className="brands-wrapper">
-			{topBrands.map((brand) => (
-				<div className="brand">
-				<img className="brand__logo" src={brand.logoSrc} />
-				<p className="brand__name">
-				{brand.name.length <= 8
-					? brand.name
-					: brand.name.slice(0, 6) + "..."}
-					</p>
-					</div>
-			))}
-			</div>
+				<h3 className="section__heading">TOP BRANDS</h3>
+
+				<div className="brands-wrapper">
+					{topBrands.map((brand) => (
+						<Brand logoSrc={brand.logoSrc} name={brand.name}/>
+					))}
+				</div>
+
 			</section>
 
 			<section className="featured-dealers">
-			<h3 className="section__heading">FEATURED DEALERS</h3>
-			<div className="dealers-wrapper">
-			{/*TODO: return only if the nuber is below 6*/}
-			{featuredDealers.map((dealer) => (
-				<div className="dealer">
-				<img className="dealer__logo" src={watchsquareLogo} />
-				<div className="dealer__info">
-				<p className="dealer__name">watchsquare</p>
-				<div className="dealer__rating">
-				<img className="star-icon" src={starIcon} />
-				<span className="dealer__rating">4.7 (1800+)</span>
+				<h3 className="section__heading">FEATURED DEALERS</h3>
+				<div className="dealers-wrapper">
+					{/*TODO: return only if the nuber is below 6*/}
+					{featuredDealers.map((dealer) => (
+						<Dealer imgSrc={dealer.img} rating={dealer.rating} reviews={dealer.reviews}/>
+					))}
 				</div>
-				</div>
-				<img className="right-icon" src={rightIcon} />
-				</div>
-			))}
-			</div>
 			</section>
 
 			<section className="trending-products">
 				<h3 className="section__heading">Trending Products on Barosa</h3>
 					<div className="products__wrapper">
 					{trendingProducts.map((product) => (
-						<div className="product">
-							<img className="product__img" src={productImg1} />
-							<p className="product__brand">Patek Phillippe</p>
-							<p className="product__name">Nautilus...</p>
-						</div>
+						<Product/>
 					))}
 				</div>
 			</section>

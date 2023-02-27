@@ -27,11 +27,12 @@ html {
 .App {
 	max-width: 420px;
 	margin: auto;
+	overflow: hidden;
 }
 
 .page-wrapper {
 	min-height: 98vh;
-	padding: var(--spacing) calc((var(--spacing)) * 1);
+	// padding: var(--spacing) calc((var(--spacing)) * 1);
 	display: flex;
 	flex-direction: column;
 }
@@ -142,118 +143,6 @@ html {
 		background-color: rgba(0, 0, 0, 0.03);
 } }
 
-.search-default {
-
-
-	.section__heading {
-		font-family: 'Poppins';
-		font-style: normal;
-		font-size: 0.625rem;
-		line-height: 0.75rem;
-		text-transform: uppercase;
-		color: #909995;
-	}
-
-	.brands-wrapper {
-		display: flex;
-		overflow-x: auto;
-
-		&::-webkit-scrollbar {
-			width: 0;
-		}
-	}
-
-	.brand {
-		height: 68px;
-		width: 72px;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		margin-right: calc(var(--spacing) * 1.5);
-
-		&__logo {
-			height: 48px;
-			width: 48px;
-			margin: 0 auto;
-			border-radius: 50%;
-			border: 1px solid #E2E9E6;
-		}
-
-		&__name {
-			font-weight: 500;
-			font-size: 0.75rem;
-			color: #565C5A;
-			margin: 0 0;
-			margin-top: 4px;
-			text-align: center;
-		}
-	}
-
-	.dealer {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		margin-bottom: calc(var(--spacing) * 2);
-
-		&__info {
-			width: 80%;
-		}
-
-		&__name {
-			font-weight: 600;
-			font-size: 0.875rem;
-			line-height: 1.25rem;
-			color: #3A3D3C;
-			margin: 0;
-			margin-bottom: calc(var(--spacing) / 2);
-		}
-
-		&__rating {
-			font-weight: 500;
-			font-size: 0.75rem;
-			color: #737A77;
-			display: flex;
-			align-items: center;
-			margin: 0;
-		}
-
-	}
-
-	.products__wrapper {
-		display: flex;
-		overflow-x: auto;
-
-		&::-webkit-scrollbar {
-			width: 0;
-		}
-	}
-
-	.product {
-		background-color: #F4F5F5;
-		width: 168px;
-		height: 240px;
-		margin-right: calc(var(--spacing));
-		display: flex;
-		flex-direction: column;
-
-		p {
-			margin: 0;
-			margin: calc(var(--spacing) / 4) calc(var(--spacing));
-		}
-
-		&__brand {
-			font-size: 0.75rem;
-			color: #565C5A;
-		}
-
-		&__name {
-			font-weight: 600;
-			font-size: 0.875rem;
-			line-height: 1.25rem;
-			color: #565C5A;
-		}
-	}
-}
 
 
 .auth-certificate {

@@ -1,0 +1,28 @@
+.product {
+	background-color: #F4F5F5;
+	width: 168px;
+	height: 240px;
+	margin-right: calc(var(--spacing));
+	display: flex;
+	flex-direction: column;
+
+	p {
+		margin: 0;
+		margin: calc(var(--spacing) / 4) calc(var(--spacing));
+	}
+
+	&__brand {
+		font-size: 0.75rem;
+		color: #565C5A;
+	}
+
+	&__name {
+		font-weight: 600;
+		font-size: 0.875rem;
+		line-height: 1.25rem;
+		color: #565C5A;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+}

@@ -1,0 +1,51 @@
+.search-keyword {
+	display: grid;
+	gap: calc(var(--spacing) * 2);
+
+
+		 .section__heading {
+			 font-family: "Poppins";
+			 font-style: normal;
+			 font-weight: 500;
+			 font-size: 0.625rem;
+			 line-height: 0.75rem;
+			 text-transform: uppercase;
+			 color: #909995;
+			 padding-left: var(--spacing);
+			 margin: 0;
+		 }
+
+		 .top-brands {
+			 display: grid;
+			 gap: calc(var(--spacing) );
+		 }
+
+
+		 .products {
+			
+			 .products__wrapper {
+				 list-style: none;
+				 padding: 0;
+				 display: grid;
+				 gap: calc(var(--spacing) * 2);
+			 }
+
+
+		 }
+
+		 .deals {
+			 display: grid;
+			 gap: calc(var(--spacing) * 2);
+
+			 .dealers-wrapper {
+				 display: grid;
+				 gap: calc(var(--spacing) * 2);
+			 }
+
+			 .dealer {
+				 padding: 0 ;
+				 padding-left: var(--spacing);
+				 padding-right: var(--spacing);
+			 }
+		 }
+	 }

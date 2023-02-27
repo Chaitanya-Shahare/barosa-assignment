@@ -1,0 +1,34 @@
+.search-default {
+
+	.section__heading {
+		font-family: 'Poppins';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 0.625rem;
+		line-height: 0.75rem;
+		text-transform: uppercase;
+		color: #909995;
+	}
+
+	.brands-wrapper {
+		display: flex;
+		overflow-x: auto;
+
+		&::-webkit-scrollbar {
+			width: 0;
+		}
+	}
+
+
+
+	.products__wrapper {
+		display: flex;
+		overflow-x: auto;
+
+		&::-webkit-scrollbar {
+			width: 0;
+		}
+	}
+
+}
+
