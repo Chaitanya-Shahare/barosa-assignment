@@ -132,7 +132,7 @@ const SearchDefault = () => {
 
 
 	return (
-		<div className="page-wrapper search-default">
+		<div className=" search-default">
 			{/* <StatusBar /> */}
 
 			<SearchBar/>
