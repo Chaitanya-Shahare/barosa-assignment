@@ -17,11 +17,8 @@
 		&__heading {
 			width: 70%;
 			font-weight: 600;
-			font-size: 14px;
-			line-height: 20px;
-			/* identical to box height, or 143% */
-
-			/* Color/Text/Light/100 */
+			font-size: 0.875rem;
+			line-height: 1.25rem;
 			color: #1D1F1E;
 		}
 	}
@@ -45,23 +42,22 @@
 			padding-right: var(--spacing);
 
 			&--small {
-				font-weight: 400;
-				font-size: 12px;
-				line-height: 16px;
+				font-size: 0.75rem;
+				line-height: 1rem;
 				color: #565C5A;
 			}
 
 			&--large {
 				font-weight: 600;
-				font-size: 16px;
+				font-size: 1rem;
 				line-height: 24px;
 				color: #3A3D3C;
 			}
 		}
 
 		&__para {
-			font-size: 12px;
-			line-height: 16px;
+			font-size: 0.75rem;
+			line-height: 1rem;
 			color: #737A77;
 			padding-left: var(--spacing);
 			padding-right: var(--spacing);
@@ -99,8 +95,8 @@
 			&__title {
 				width: 80%;
 				font-weight: 600;
-				font-size: 14px;
-				line-height: 20px;
+				font-size: 0.875rem;
+				line-height: 1.25rem;
 				color: #3A3D3C;
 				margin: 0;
 			}
@@ -108,8 +104,8 @@
 			&__sub-title {
 				margin: 0;
 				font-weight: 500;
-				font-size: 12px;
-				line-height: 16px;
+				font-size: 0.75rem;
+				line-height: 1rem;
 				color: #40B586;
 
 			}
