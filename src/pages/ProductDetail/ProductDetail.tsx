@@ -1,6 +1,7 @@
 import StatusBar from "../../components/StatusBar";
 import WolverineImg from "../../assets/images/Wolverine.png";
 import "./ProductDetail.scss";
+import {Link} from "react-router-dom";
 
 
 const ProductDetail = () => {
@@ -34,7 +35,9 @@ const ProductDetail = () => {
 
 			<header className="header">
 				<button className="small-btn">
+					<Link to="/">
 					<i className="ri-arrow-left-line ri-xl"></i>
+					</Link>
 				</button>
 				<h3 className="header__heading">Product Detail</h3>
 				<button className="small-btn">

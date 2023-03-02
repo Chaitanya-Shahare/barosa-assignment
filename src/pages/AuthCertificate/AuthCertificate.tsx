@@ -3,6 +3,7 @@ import StatusBar from "../../components/StatusBar";
 import backIcon from "../../assets/icons/back-icon.svg";
 import qrIcon from "../../assets/icons/qr-icon.svg";
 import productImg from "../../assets/products/watch.svg";
+import {Link} from "react-router-dom";
 
 const AuthCertificate = () => {
 
@@ -10,7 +11,9 @@ const AuthCertificate = () => {
 		<div className="page-wrapper auth-certificate">
 			<StatusBar/>
 			<section className="header">
+				<Link to="/">
 				<img className="back-icon" src={backIcon}/>
+				</Link>
 				<p className="header__heading">Authentication Certificate</p>
 				<img className="qr-icon" src={qrIcon}/>
 			</section>

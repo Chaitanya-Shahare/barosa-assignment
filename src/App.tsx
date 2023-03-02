@@ -7,6 +7,7 @@ import SearchDefault from './pages/SearchDefault/SearchDefault';
 import AuthCertificate from './pages/AuthCertificate/AuthCertificate';
 import SearchKeyword from './pages/SearchKeyword/SearchKeyword';
 import ProductDetail from './pages/ProductDetail/ProductDetail';
+import Home from './pages/Home/Home';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
 		{/* <VerifyEmail/> */}
 		<BrowserRouter>
 			<Routes>
+				<Route path='/' element={<Home/>}/>
 				<Route path='/verify' element={<VerifyEmail/>}/>
 				<Route path='/search' element={<SearchDefault/>}/>
 				<Route path='/search-keyword' element={<SearchKeyword/>}/>

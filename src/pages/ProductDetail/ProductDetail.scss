@@ -68,15 +68,12 @@
 
 		list-style: none;
 		padding: 0;
-		display: grid;
-		gap: calc(var(--spacing) * 1.5);
 
 		.link {
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
-			padding-left: var(--spacing);
-			padding-right: var(--spacing);
+			padding: var(--spacing);
 
 			.small-btn--grey-rounded {
 				width: 40px;

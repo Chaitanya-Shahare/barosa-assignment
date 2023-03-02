@@ -1,4 +1,5 @@
 import {useState} from "react";
+import {Link} from "react-router-dom";
 import "./SearchBar.scss"
 
 const SearchBar = () => {
@@ -9,9 +10,11 @@ const SearchBar = () => {
 
 			<section className="search">
 			{/* <img src={backIcon} className="back-icon" /> */}
-			<button className="back-btn small-btn">
-				<i className="ri-arrow-left-line back-icon ri-xl"></i>
-			</button>
+				<Link to="/">
+					<button className="back-btn small-btn">
+					<i className="ri-arrow-left-line back-icon ri-xl"></i>
+					</button>
+				</Link>
 			<div className="searchbar-wrapper">
 			<input
 				className="search__text"

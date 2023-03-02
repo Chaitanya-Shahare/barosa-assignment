@@ -1,0 +1,26 @@
+
+.home-wrapper {
+	display: flex;
+	padding: var(--spacing);
+	flex-direction: column;
+	justify-content: center;;
+}
+
+.btn--green {
+	font-style: normal;
+	font-weight: 500;
+	font-size: 0.875rem;
+	line-height: 1.25rem;
+	border-radius: 48px;
+	border: none;
+	background-color: var(--green);
+	color: white;
+	padding: calc((var(--spacing)) * 2);
+	text-align: center;
+	margin-bottom: var(--spacing);
+
+	&:hover {
+		background-color: grey;
+		color: black;
+	}
+}
