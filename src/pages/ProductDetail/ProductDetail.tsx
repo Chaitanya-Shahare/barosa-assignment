@@ -1,7 +1,7 @@
-import StatusBar from "../../components/StatusBar";
 import WolverineImg from "../../assets/images/Wolverine.png";
 import "./ProductDetail.scss";
 import {Link} from "react-router-dom";
+import StatusBar from "../../components/StatusBar/StatusBar";
 
 
 const ProductDetail = () => {

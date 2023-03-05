@@ -6,6 +6,11 @@
 	justify-content: center;;
 }
 
+.btn {
+	background-color: hsl(var(--grey-hs) var(--l-0));
+	color: hsl(var(--grey-hs) var(--l-1000));
+}
+
 .btn--green {
 	font-style: normal;
 	font-weight: 500;
@@ -13,8 +18,8 @@
 	line-height: 1.25rem;
 	border-radius: 48px;
 	border: none;
-	background-color: var(--green);
-	color: white;
+	background-color: var(--brand-color);
+	color: hsl(var(--grey-hs) var(--l-0));
 	padding: calc((var(--spacing)) * 2);
 	text-align: center;
 	margin-bottom: var(--spacing);
@@ -24,3 +29,4 @@
 		color: black;
 	}
 }
+

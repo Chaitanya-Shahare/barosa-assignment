@@ -1,0 +1,30 @@
+.status {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: calc((var(--spacing)) * 2.0);
+
+	&-item {
+		height: 16px;
+		background-color: #EDF5F0;
+		border-radius: 25px;
+	}
+
+	&__left {
+		width: 33px;
+	}
+
+	&__right {
+		display: flex;
+		justify-content: space-between;
+		width: 20%;
+	}
+
+	&__circle {
+		width: 16px;
+	}
+
+	&__oval {
+		width: 24px;
+	}
+}

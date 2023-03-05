@@ -11,6 +11,7 @@
 		border: 1px solid grey;
 		border-radius: 50%;
 		border: 1px solid #e2e9e6;
+		background-color: white;
 	}
 
 	&__info {
@@ -26,7 +27,7 @@
 		/* identical to box height, or 143% */
 
 		/* Color/Text/Light/90 */
-		color: #3a3d3c;
+		color: hsl(160, 2.5%, var(--l-200));
 	}
 
 	&__products-no {
@@ -36,6 +37,7 @@
 		/* identical to box height, or 133% */
 
 		/* Color/Text/Light/70 */
-		color: #737a77;
+		color: hsl(154, 3%, 46.5%);
+		color: hsl(154, 3%, calc(var(--l-400) * 1.162));
 	}
 }

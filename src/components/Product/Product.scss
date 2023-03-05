@@ -1,5 +1,5 @@
 .product {
-	background-color: #F4F5F5;
+	background-color: hsl(180, 4.8%, calc(var(--l-900) * 1.065));
 	width: 168px;
 	height: 240px;
 	margin-right: calc(var(--spacing));
@@ -13,14 +13,14 @@
 
 	&__brand {
 		font-size: 0.75rem;
-		color: #565C5A;
+		color: hsl(160, 3.4%, calc(var(--l-300) * 1.15));
 	}
 
 	&__name {
 		font-weight: 600;
 		font-size: 0.875rem;
 		line-height: 1.25rem;
-		color: #565C5A;
+		color: hsl(160, 3.4%, calc(var(--l-300) * 1.15));
 		white-space: nowrap;
 		overflow: hidden;
 		text-overflow: ellipsis;

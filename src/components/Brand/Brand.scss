@@ -13,12 +13,13 @@
 		margin: 0 auto;
 		border-radius: 50%;
 		border: 1px solid #E2E9E6;
+		background-color: white;
 	}
 
 	&__name {
 		font-weight: 500;
 		font-size: 0.75rem;
-		color: #565C5A;
+		color: hsl(160, 3.4%, var(--l-300));
 		margin: 0 0;
 		margin-top: 4px;
 		text-align: center;

@@ -1,10 +1,10 @@
 import Dealer from "../../components/Dealer/Dealer";
 import SearchBar from "../../components/SearchBar/SearchBar";
-import StatusBar from "../../components/StatusBar";
 import "./SearchKeyword.scss";
 import watchpolisLogo from "../../assets/logos/dealers/WatchpolisLogo.svg";
 import TopBrand from "../../components/TopBrand/TopBrand";
 import ProductFullWidth from "../../components/ProductFullWidth/ProductFullWidth";
+import StatusBar from "../../components/StatusBar/StatusBar";
 
 
 const SearchKeyword = () => {

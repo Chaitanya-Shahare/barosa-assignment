@@ -1,6 +1,5 @@
 import React from "react";
 // Components
-import StatusBar from "../../components/StatusBar";
 import SearchBar from "../../components/SearchBar/SearchBar";
 import Brand from "../../components/Brand/Brand";
 import Dealer from "../../components/Dealer/Dealer";
@@ -21,6 +20,7 @@ import watchsquareLogo from "../../assets/logos/dealers/WatchsquareLogo.svg";
 import productImg1 from "../../assets/products/Nautilus Chronograph.svg";
 import productImg2 from "../../assets/products/Heritage.svg";
 import productImg3 from "../../assets/products/Frame 135-2.svg";
+import StatusBar from "../../components/StatusBar/StatusBar";
 
 const SearchDefault = () => {
 	const topBrands = [
@@ -133,7 +133,7 @@ const SearchDefault = () => {
 
 	return (
 		<div className=" search-default">
-			{/* <StatusBar /> */}
+			{/* <StatusBar/> */}
 
 			<SearchBar/>
 

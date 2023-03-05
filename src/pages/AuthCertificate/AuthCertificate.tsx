@@ -1,15 +1,16 @@
 import React from "react";
-import StatusBar from "../../components/StatusBar";
 import backIcon from "../../assets/icons/back-icon.svg";
 import qrIcon from "../../assets/icons/qr-icon.svg";
 import productImg from "../../assets/products/watch.svg";
 import {Link} from "react-router-dom";
+import "./AuthCertificate.scss";
+import StatusBar from "../../components/StatusBar/StatusBar";
 
 const AuthCertificate = () => {
 
 	return (
 		<div className="page-wrapper auth-certificate">
-			<StatusBar/>
+			{/* <StatusBar/> */}
 			<section className="header">
 				<Link to="/">
 				<img className="back-icon" src={backIcon}/>

@@ -1,0 +1,113 @@
+
+.auth-certificate {
+	.header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-top: calc( var(--spacing) * 2 );
+		padding-bottom: calc( var(--spacing) * 2 );
+
+		&__heading {
+			width: 80%;
+			font-weight: 600;
+			font-size: 0.875rem;
+			line-height: 1.25rem;
+			color: hsl(150, 3.3%, var(--l-100));
+		}
+	}
+
+	.main {
+
+
+		&__image {
+			width: 100%;
+		}
+
+		&__heading {
+			font-weight: 500;
+			font-size: 0.75rem;
+			text-transform: uppercase;
+			color: hsl(150, 3.3%, var(--l-100));
+			text-align: center;
+			border-bottom: 1px solid #E2E9E6;
+			padding: var(--spacing);
+		}
+
+		&__para {
+			font-size: 0.875rem;
+			line-height: 1.25rem;
+			color: hsl(154, 3%, calc(var(--l-400) * 1.15));
+			margin-bottom: calc(var(--spacing) * 2);
+		padding-top: calc( var(--spacing) * 1 );
+		padding-left: calc( var(--spacing) * 1 );
+		padding-right: calc( var(--spacing) * 1 );
+
+			.text--bold {
+				font-weight: 500;
+				color: hsl(150, 3.3%, var(--l-100));
+				margin: 0 calc(var(--spacing) / 2);
+			}
+		}
+
+		.section__heading {
+			font-size: 0.625rem;
+			line-height: 0.75rem;
+			text-transform: uppercase;
+			color: #909995;
+			margin-top: calc(var(--spacing) * 2);
+			margin-bottom: calc(var(--spacing) * 1);
+		padding-left: calc( var(--spacing) * 1 );
+		padding-right: calc( var(--spacing) * 1 );
+		}
+
+		table {
+			width: 100%;
+		padding-left: calc( var(--spacing) * 1 );
+		padding-right: calc( var(--spacing) * 1 );
+		}
+
+		td:nth-child(1){
+			font-size: 0.75rem;
+			color: hsl(154, 3%, calc(var(--l-400) * 1.15));
+			text-align: left;
+		}
+
+		td:nth-child(2){
+			font-weight: 500;
+			font-size: 0.75rem;
+			text-align: right;
+			color: hsl(160, 3.4%, calc(var(--l-300) * 1.133));
+		}
+	}
+
+	.footer {
+		.blockchain-btn {
+			width: 127px;
+			background: hsla(156, 43.9%, var(--l-500), 0.12);
+			border-radius: 24px;
+			font-weight: 500;
+			font-size: 0.75rem;
+			color: var(--brand-color);
+			text-align: center;
+			margin: auto;
+			margin-top: calc(var(--spacing) * 2.5);
+			padding: 1%;
+		}
+
+		&__certification {
+			text-align: center;
+			font-weight: 500;
+			font-size: 0.75rem;
+			line-height: 1.125rem;
+			text-transform: uppercase;
+			color: hsl(150, 3.3%, var(--l-100));
+
+			span {
+				font-size: 0.75rem;
+				color: hsl(150, 3.3%, var(--l-100));
+				font-family: 'Moon Dance', cursive;
+			}
+		}
+		
+	}
+}

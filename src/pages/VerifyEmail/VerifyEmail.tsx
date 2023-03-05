@@ -1,11 +1,12 @@
 import React from "react";
 import componseEmail from "../../assets/compose-email/Compose email 1.svg";
-import StatusBar from "../../components/StatusBar";
+import StatusBar from "../../components/StatusBar/StatusBar";
+import "./VerifyEmail.scss"
 
 const VerifyEmail = () => {
 	return (
 		<div className="verify-email page-wrapper">
-			<StatusBar />
+			{/* <StatusBar/> */}
 
 			<header className="header">
 				<h2 className="header__heading">Verify your Email</h2>
