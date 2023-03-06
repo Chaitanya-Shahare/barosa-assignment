@@ -8,11 +8,13 @@ import AuthCertificate from "./pages/AuthCertificate/AuthCertificate";
 import SearchKeyword from "./pages/SearchKeyword/SearchKeyword";
 import ProductDetail from "./pages/ProductDetail/ProductDetail";
 import Home from "./pages/Home/Home";
+import ColorPicker from "./components/ColorPicker/ColorPicker";
 
 function App() {
 	return (
 		<div className={`App `} id="App">
 			<BrowserRouter>
+				{/* <ColorPicker/> */}
 				<Routes>
 					<Route path="/" element={<Home />} />
 					<Route path="/verify" element={<VerifyEmail />} />

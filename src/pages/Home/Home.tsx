@@ -1,16 +1,59 @@
+import {useEffect, useState} from "react";
 import {Link} from "react-router-dom";
 import "./Home.scss"
 
 
 const Home = () => {
 
-	// var icon = document. getElementById ("icon");
-	// icon.onclick = function () {
-	// document.body.classList.toggle ("dark-theme");
-	// }
+	const [colorTheme, setColorTheme] = useState("green");
+
+	const handleColorTheme = (event: any) => {
+		setColorTheme(event.target.value);
+	}
+
+	useEffect(() => {
+
+		if (colorTheme === "red"){
+			document.body.classList.remove("green")
+			document.body.classList.remove("yellow")
+			document.body.classList.add("red")
+		}
+		else if (colorTheme === "green") {
+			document.body.classList.remove("red")
+			document.body.classList.remove("yellow")
+			document.body.classList.add("green")
+		} else if (colorTheme === "yellow") {
+			document.body.classList.remove("red")
+			document.body.classList.remove("green")
+			document.body.classList.add("yellow")
+		}
+
+	}, [colorTheme])
 
 	return (
 		<div className={ `home home-wrapper page-wrapper ` }>
+
+			<form>
+				<input 
+					type="radio" 
+					name="theme"
+					value="green"
+					onChange={handleColorTheme}
+					defaultChecked={true}
+				/> Green
+				<input 
+					type="radio" 
+					name="theme"
+					value="red"
+					onChange={handleColorTheme}
+				/> Red
+				<input 
+					type="radio" 
+					name="theme"
+					value="yellow"
+					onChange={handleColorTheme}
+				/> Yellow
+			</form>
 
 			<button className="btn" 
 				onClick={() => {

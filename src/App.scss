@@ -41,6 +41,21 @@
 
 }
 
+.green {
+	--brand-color: #40B586;
+	--brand-color-hs: 156 47.8%;
+}
+
+.red {
+	--brand-color: hsl(0, 100%, 69%);
+	--brand-color-hs: 0 100%;
+}
+
+.yellow {
+	--brand-color: hsl(43, 100%, 68%);
+	--brand-color-hs: 43 100%;
+}
+
 // @media (prefers-color-scheme: dark) {
 //   :root {
 //     --background: #333333; /* dark mode background color */
