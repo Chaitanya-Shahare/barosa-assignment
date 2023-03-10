@@ -55,12 +55,15 @@ const Home = () => {
 				/> Yellow
 			</form>
 
-			<button className="btn" 
+			<button className="theme-btn" 
 				onClick={() => {
 						document.body.classList.toggle("dark-theme");
 				}}
 			>Darkmode</button>
 
+			<Link to="/search-result-items" className="btn btn--green">
+				Search Result Items
+			</Link>
 			<Link to="/search" className="btn btn--green">
 				Search Default
 			</Link>

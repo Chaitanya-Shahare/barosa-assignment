@@ -1,0 +1,22 @@
+
+.titlebar {
+	padding-left: calc(var(--spacing) * 1);
+	// padding-top: calc(var(--spacing) * 1);
+
+	display: flex;
+	align-items: center;
+
+	width: 70%;
+
+	.back-icon {
+		color: grey;
+	}
+
+	&__heading {
+		font-weight: 600;
+		font-size: 0.875rem;
+		line-height: 1.25rem;
+		color: #1D1F1E;
+		padding-left: calc(var(--spacing) * 1);
+	}
+}

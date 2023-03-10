@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import logo from "./logo.svg";
 import "./App.scss";
 import VerifyEmail from "./pages/VerifyEmail/VerifyEmail";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
@@ -9,6 +8,7 @@ import SearchKeyword from "./pages/SearchKeyword/SearchKeyword";
 import ProductDetail from "./pages/ProductDetail/ProductDetail";
 import Home from "./pages/Home/Home";
 import ColorPicker from "./components/ColorPicker/ColorPicker";
+import SearchResultItems from "./pages/SearchResultItems/SearchResultItems";
 
 function App() {
 	return (
@@ -22,6 +22,7 @@ function App() {
 					<Route path="/search-keyword" element={<SearchKeyword />} />
 					<Route path="/certificate" element={<AuthCertificate />} />
 					<Route path="/product-detail" element={<ProductDetail />} />
+					<Route path="/search-result-items" element={<SearchResultItems />} />
 				</Routes>
 			</BrowserRouter>
 		</div>
