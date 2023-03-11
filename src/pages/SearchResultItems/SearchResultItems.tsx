@@ -1,3 +1,4 @@
+import SearchResultItem from "../../components/SearchResultItem/SearchResultItem";
 import StatusBar from "../../components/StatusBar/StatusBar";
 import TitleBar from "../../components/TitleBar/TitleBar";
 import "./SearchResultItems.scss"
@@ -21,17 +22,13 @@ const SearchResultItems = () => {
 
 		{
 		[...Array(10)].map(() => (
-
-			<div className="item">
-				<div className="item__img">
-					<img src={imgSrc}/>
-				</div>
-
-				<p className="item__brand">Rolex</p>
-				<p className="item__name">Submariner</p>
-				<p className="item__price">$35,000</p>
-				<p className="item__seller">Box & Papers</p>
-			</div>
+			<SearchResultItem 
+				imgSrc={"https://watchbox-cdn.imgix.net/posted-product-images/638046221341694942_ROLE304220_4647426_84681_40-1-2.jpg"}
+				brand={"Rolex"}
+				name={"Submariner"}
+				price={35000}
+				seller={"Box & Papers"}
+			/>
 		))
 		}
 

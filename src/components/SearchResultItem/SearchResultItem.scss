@@ -1,0 +1,45 @@
+.search-result-item{
+
+	.item {
+		padding-top: calc(var(--spacing) * 2);
+		padding-bottom: calc(var(--spacing) * 2);
+
+		&__img {
+			border-bottom: 1px solid lightgrey;
+
+			> img {
+				width: 100%;
+			}
+		}
+
+		&__brand {
+			font-size: 0.75rem;
+			color: #565C5A;
+			padding-top: calc( var(--spacing) * 1 );
+			padding-bottom: calc( var(--spacing) * 0.25 );
+		}
+
+		&__name, &__price {
+			font-weight: 600;
+		}
+
+		&__name {
+			font-size: 0.875rem;
+			line-height: 1.25rem;
+			color: #3A3D3C;
+		}
+
+		&__price {
+			font-size: 0.75rem;
+			color: #565C5A;
+			padding-top: calc( var(--spacing) * 0.25 );
+		}
+
+		&__seller {
+			font-size: 0.625rem;
+			line-height: 0.75rem;
+			color: #909995;
+			padding-top: calc( var(--spacing) * 0.25 );
+		}
+	}
+}
