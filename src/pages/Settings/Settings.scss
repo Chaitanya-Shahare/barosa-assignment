@@ -1,0 +1,44 @@
+
+
+.settings {
+
+	display: grid;
+	gap: calc(var(--spacing) * 2);
+
+	.header {
+		background-color: var(--brand-color);
+		height: 56px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		&__heading {
+			color: hsl(0, 0%, var(--l-1000));
+			font-weight: 600;
+			font-size: 0.875rem;
+			line-height: 1.25rem;
+		}
+	}
+
+	.body {
+		display: grid;
+		gap: calc(var(--spacing) * 2);
+	}
+
+	.section {
+		
+		&__heading {
+
+			font-weight: 500;
+			font-size: 0.75rem;
+			text-transform: uppercase;
+			color: #565C5A;
+			margin-bottom: calc(var(--spacing) * 1)
+		}
+
+		&__settings {
+			list-style: none;
+			padding: 0;
+		}
+	}
+}

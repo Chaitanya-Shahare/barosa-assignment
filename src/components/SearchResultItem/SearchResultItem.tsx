@@ -2,6 +2,7 @@ import "./SearchResultItem.scss";
 
 interface IProps {
   imgSrc: string;
+  imgAlt: string;
   brand: string;
   name: string;
   price: number;
@@ -13,7 +14,7 @@ const SearchResultItem = (Props: IProps) => {
     <div className="search-result-item">
       <div className="item">
         <div className="item__img">
-          <img src={Props.imgSrc} />
+          <img src={Props.imgSrc} alt={Props.imgAlt}/>
         </div>
 
         <p className="item__brand">{Props.brand}</p>

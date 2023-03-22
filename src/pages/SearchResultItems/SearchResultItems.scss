@@ -4,16 +4,27 @@
 		align-items: center;
 		justify-content: space-between;
 		padding-right: calc(var(--spacing) * 3);
+		padding-top: calc(var(--spacing) * 2);
 		padding-bottom: calc(var(--spacing) * 2);
 		border-bottom: 1px solid lightgrey;
 		position: relative;
+
+
+		// TODO : Scroll Items
+
+		.small-btn {
+			min-height: 40px;
+			min-width: 40px;
+			display: flex;
+			justify-content: center;
+		}
 
 		.filter-count {
 			width: 1rem;
 			height: 1rem;
 			position: absolute;
-			right: calc(var(--spacing) * 1);
-			top: calc(var(--spacing) * -1.5);
+			right: calc(var(--spacing) * 2.5);
+			top: calc(var(--spacing) * 1.5);
 			background-color: var(--brand-color);
 			color: white;
 			border-radius: 50%;
@@ -33,6 +44,8 @@
 		gap: var(--spacing);
 		padding-left: calc(var(--spacing) * 2);
 		padding-right: calc(var(--spacing) * 2);
+		height: calc(100vh - 80px);
+		overflow-y: scroll;
 	}
 
 }

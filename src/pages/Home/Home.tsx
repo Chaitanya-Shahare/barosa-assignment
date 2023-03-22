@@ -61,6 +61,9 @@ const Home = () => {
 				}}
 			>Darkmode</button>
 
+			<Link to="/settings" className="btn btn--green">
+				Settings
+			</Link>
 			<Link to="/search-result-items" className="btn btn--green">
 				Search Result Items
 			</Link>

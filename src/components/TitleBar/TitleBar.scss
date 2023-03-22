@@ -1,7 +1,8 @@
 
 .titlebar {
 	padding-left: calc(var(--spacing) * 1);
-	// padding-top: calc(var(--spacing) * 1);
+
+	background-color: var(--background);
 
 	display: flex;
 	align-items: center;

@@ -9,10 +9,12 @@ const SearchResultItems = () => {
 
 	return(
 	<div className="result-items">
-		<StatusBar/>
+		{/*<StatusBar/>*/}
 		<div className="result-items__header">
 			<TitleBar title="Rolex"/>
-			<i className="ri-filter-3-line ri-lg filter-icon"></i>
+			<button className="btn small-btn">
+				<i className="ri-filter-3-line ri-lg filter-icon"></i>
+			</button>
 			<div className="filter-count">2</div>
 		</div>
 
@@ -24,6 +26,7 @@ const SearchResultItems = () => {
 		[...Array(10)].map(() => (
 			<SearchResultItem 
 				imgSrc={"https://watchbox-cdn.imgix.net/posted-product-images/638046221341694942_ROLE304220_4647426_84681_40-1-2.jpg"}
+				imgAlt={"Rolex Submariner"}
 				brand={"Rolex"}
 				name={"Submariner"}
 				price={35000}

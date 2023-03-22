@@ -1,0 +1,88 @@
+
+
+.settings-item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: calc(var(--spacing) * 1.5);
+	padding-bottom: calc(var(--spacing) * 1.5);
+
+	&__icon-wrapper {
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+		padding: var(--spacing);
+		gap: var(--spacing);
+
+		width: 32px;
+		height: 32px;
+
+		border-radius: 50%;
+
+		> i {
+			color: white;
+		}
+
+		&--blue {
+			background: #314EC4;
+		}
+
+		&--orange {
+			background: #EC7627;
+		}
+
+		&--cyan {
+			background: #31C4C4;
+		}
+
+		&--yellow {
+			background: #E1B814;
+		}
+
+		&--red {
+			background: #E2506D;
+		}
+
+		&--purple {
+			background: #6C31C4;
+		}
+
+		&--green {
+			background: #40B586;
+		}
+
+		&--pink {
+			background: #C431C4;
+		}
+
+		&--grey {
+			background: #56615D;
+		}
+
+		&--dark-grey {
+			background: #3D3D3D;
+		}
+	}
+
+	&__title {
+		font-weight: 600;
+		font-size: 0.875rem;
+		line-height: 1.25rem;
+		color: #1D1F1E;
+		width: fill;
+		padding-left: var(--spacing);
+	}
+
+	.icon-button {
+		background: transparent;
+		border: none;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+	}
+
+	.right-icon {
+		color: var(--icon-color-1);
+	}
+}

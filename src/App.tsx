@@ -9,6 +9,7 @@ import ProductDetail from "./pages/ProductDetail/ProductDetail";
 import Home from "./pages/Home/Home";
 import ColorPicker from "./components/ColorPicker/ColorPicker";
 import SearchResultItems from "./pages/SearchResultItems/SearchResultItems";
+import Settings from "./pages/Settings/Settings";
 
 function App() {
 	return (
@@ -23,6 +24,7 @@ function App() {
 					<Route path="/certificate" element={<AuthCertificate />} />
 					<Route path="/product-detail" element={<ProductDetail />} />
 					<Route path="/search-result-items" element={<SearchResultItems />} />
+					<Route path="/settings" element={<Settings />} />
 				</Routes>
 			</BrowserRouter>
 		</div>

@@ -8,6 +8,14 @@
 	// --brand-color: hsl(156, 47.8%, 48%);
 	--brand-color-hs: 156 47.8%;
 	--grey-hs: 0 0%;
+
+
+
+	--icon-color-1: #909995;
+
+
+
+
 	--l-0: 0%;
 	--l-100: 10%;
 	--l-200: 20%;
@@ -82,8 +90,8 @@ body {
 }
 
 .container {
-	padding-left: calc(var(--spacing) * 1);
-	padding-right: calc(var(--spacing) * 1);
+	padding-left: calc(var(--spacing) * 2);
+	padding-right: calc(var(--spacing) * 2);
 }
 
 a {
