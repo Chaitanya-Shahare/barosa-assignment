@@ -10,8 +10,43 @@ import Home from "./pages/Home/Home";
 import ColorPicker from "./components/ColorPicker/ColorPicker";
 import SearchResultItems from "./pages/SearchResultItems/SearchResultItems";
 import Settings from "./pages/Settings/Settings";
+import DropdownInput from "./components/DropdownInput/DropdownInput";
 
 function App() {
+	const arrayOfObjects = [
+		{
+			name: "1st options",
+			icon: "ri-arrow-down-s-line"
+		},
+		{
+		    name: "2nd options",
+			icon: "ri-arrow-down-s-line"
+		},
+		{
+			name: "1st options",
+			icon: "ri-arrow-down-s-line"
+		},
+		{
+		    name: "2nd options",
+			icon: "ri-arrow-down-s-line"
+		},
+		{
+			name: "1st options",
+			icon: "ri-arrow-down-s-line"
+		},
+		{
+		    name: "2nd options",
+			icon: "ri-arrow-down-s-line"
+		},
+		{
+			name: "1st options",
+			icon: "ri-arrow-down-s-line"
+		},
+		{
+		    name: "2nd options",
+			icon: "ri-arrow-down-s-line"
+		},
+	]
 	return (
 		<div className={`App `} id="App">
 			<BrowserRouter>
@@ -25,6 +60,11 @@ function App() {
 					<Route path="/product-detail" element={<ProductDetail />} />
 					<Route path="/search-result-items" element={<SearchResultItems />} />
 					<Route path="/settings" element={<Settings />} />
+					<Route path="/dropdown" element={<DropdownInput 
+						placeholder="watches"
+						isIcons={true}
+						options={arrayOfObjects}
+					/>} />
 				</Routes>
 			</BrowserRouter>
 		</div>

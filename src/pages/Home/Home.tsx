@@ -1,5 +1,6 @@
 import {useEffect, useState} from "react";
 import {Link} from "react-router-dom";
+import DropdownInput from "../../components/DropdownInput/DropdownInput";
 import "./Home.scss"
 
 
@@ -82,6 +83,7 @@ const Home = () => {
 			<Link to="/verify" className="btn btn--green">
 				Verify Email
 			</Link>
+			<DropdownInput options={[{name: "abc", icon: "ri-arrow-down-s-line"}]} isIcons={true} placeholder={"xyz"}/>
 		</div>
 	)
 }
